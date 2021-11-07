@@ -1,0 +1,78 @@
+@font-face {
+  font-family: HarryPotter;
+  src: url("../fonts/HARRYP__.TTF");
+}
+
+.card {
+  width: 10em;
+  padding: 10px;
+  margin: 10px;
+  color: black;
+  font-weight: bold;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: center;
+  font-size: 2em;
+}
+.card p {
+  max-width: 130px;
+}
+.card label {
+  margin: 1em;
+  font-family: HarryPotter;
+}
+.picture {
+  height: 197px;
+  width: 160px;
+  object-fit: cover;
+  border: 1px solid white;
+  border-radius: 5px;
+}
+.Slytherin {
+  border-color: #00a421;
+  text-shadow: -1px 0 #00a421, 0 1px #00a421, 1px 0 #00a421, 0 -1px #00a421;
+}
+.Gryffindor {
+  border-color: #a40201;
+  text-shadow: -1px 0 #a40201, 0 1px #a40201, 1px 0 #a40201, 0 -1px #a40201;
+}
+.Ravenclaw {
+  border-color: rgb(50, 50, 226);
+  text-shadow: -1px 0 rgb(50, 50, 226), 0 1px rgb(50, 50, 226),
+    1px 0 rgb(50, 50, 226), 0 -1px rgb(50, 50, 226);
+}
+.Hufflepuff {
+  border-color: #f9e141;
+  text-shadow: -1px 0 #f9e141, 0 1px #f9e141, 1px 0 #f9e141, 0 -1px #f9e141;
+}
+
+@keyframes pulse {
+  25% {
+    transform: scale(1.05);
+  }
+  50% {
+    transform: scale(1);
+  }
+  75% {
+    transform: scale(0.95);
+  }
+}
+
+.Slytherin:hover,
+.Slytherin:focus,
+.Slytherin:active,
+.Gryffindor:hover,
+.Gryffindor:focus,
+.Gryffindor:active,
+.Ravenclaw:hover,
+.Ravenclaw:focus,
+.Ravenclaw:active,
+.Hufflepuff:hover,
+.Hufflepuff:focus,
+.Hufflepuff:active {
+  animation-name: pulse;
+  animation-duration: 1s;
+  animation-timing-function: linear;
+  animation-iteration-count: infinite;
+}

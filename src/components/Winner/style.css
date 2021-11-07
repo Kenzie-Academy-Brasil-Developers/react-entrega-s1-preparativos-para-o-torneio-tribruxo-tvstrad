@@ -1,0 +1,42 @@
+.container {
+  display: flex;
+  flex-direction: column;
+  flex-wrap: wrap;
+}
+
+.contestants {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+.winner {
+  animation: glow 1s ease-in-out infinite alternate;
+}
+.winnerText {
+  animation: glowText 1s ease-in-out infinite alternate;
+}
+
+@keyframes glow {
+  from {
+    box-shadow: 0 0 10px #f9e141, 0 0 20px #f9e141, 0 0 30px #3818c7,
+      0 0 40px #3818c7, 0 0 50px #a40201, 0 0 60px #a40201, 0 0 70px #a40201;
+  }
+
+  to {
+    box-shadow: 0 0 20px #3818c7, 0 0 30px #3818c7, 0 0 40px #00a421,
+      0 0 50px #00a421, 0 0 60px #00a421, 0 0 70px #00a421, 0 0 80px #00a421;
+  }
+}
+
+@keyframes glowText {
+  from {
+    text-shadow: 0 0 10px #fff, 0 0 20px #fff, 0 0 30px #7b308a,
+      0 0 40px #7b308a, 0 0 50px #7b308a, 0 0 60px #7b308a, 0 0 70px #7b308a;
+  }
+
+  to {
+    text-shadow: 0 0 20px #fff, 0 0 30px #00a421, 0 0 40px #00a421,
+      0 0 50px #00a421, 0 0 60px #00a421, 0 0 70px #00a421, 0 0 80px #00a421;
+  }
+}
