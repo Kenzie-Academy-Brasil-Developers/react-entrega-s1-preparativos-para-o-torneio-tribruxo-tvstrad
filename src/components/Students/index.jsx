@@ -20,7 +20,3 @@ const Students = ({ contestants, handleWinner }) => {
 };
 
 export default Students;
-
-// {studentList.map((student, index) => (
-//      />
-//   ))}
